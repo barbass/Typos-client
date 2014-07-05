@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Сервис опечаток</title>
+		<script src="etersoft_typos.js"></script>
+		<script src="etersoft_typos_language-ru.js"></script>
+		<link type="text/css" href="etersoft_typos.css" rel="stylesheet" />
+	</head>
+<body>
+
+<script type='text/javascript'>
+	window.onload = function() {
+		var typos = new ETYPOS();
+
+		document.querySelectorAll('.e_typos_div .e_typos_close')[0].addEventListener('click', function() {typos.closeWindow();}, false);
+		document.querySelectorAll('.e_typos_div .e_typos_close')[1].addEventListener('click', function() {typos.closeWindow();}, false);
+		document.querySelector('.e_typos_div .e_typos_post').addEventListener('click', function() {typos.postData();}, false);
+			
+		window.document.onkeydown = function(e) {
+			if (e.ctrlKey == 1 && e.keyCode == 13) {
+				typos.controlPanel();
+			}
+		};
+	}
+</script>
+
+<div class="e_typos_div">
+	<div class="e_typos_title">
+		<span>Сервис опечаток</span>
+		<span title="Закрыть окно" class="e_typos_close"><b>х</b></span>
+	</div>
+	
+	<p class="e_typos_desc">
+		Вы выделили:
+		<b class='e_typos_desc_text'></b>
+	</p>
+
+	<p>
+		<nobr>Комментарий: <input type="text" class="e_typos_comment" size='19' maxlength="50" placeholder="Должна быть буква..."/></nobr>
+	</p>
+
+	<p class="e_typos_message"></p>
+
+	<p class='e_typos_controll_buttons'>
+		<input type="button" title="Отправить сообщение об опечатке" value="Отправить" class="e_typos_button e_typos_post" />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" title="Закрыть окно" value="Закрыть" class="e_typos_button e_typos_close" />
+	</p>
+</div>
+
+<div>
+	Казахста́н (официально Респу́блика Казахста́н, каз. Қазақстан [qɑzɑqˈstɑn]) — государство, располагающееся в центре Евразии, бо́льшая часть которого относится к Азии, а меньшая — к Европе, Казахстан располагается между Каспийским морем, Нижним Поволжьем, Уралом, Сибирью, Китаем и Средней Азией.
+
+	По площади территории занимает девятое место среди государств мира (2 млн 724,9 тыс. км²). Расположение: от восточной окраины дельты Волги на западе до Алтайских гор на востоке, от Западно-Сибирской равнины и южной оконечности Урала на севере до Тянь-Шаньской горной системы и пустыни Кызылкум на юге страны.
+
+	Граничит на севере и западе с Россией — 7548,1 км, на востоке — с Китаем — 1782,8 км, на юге — с Киргизией — 1241,6 км, Узбекистаном — 2351,4 км и Туркменией — 426,0 км. Общая протяженность сухопутных границ — 13392,6 км[1]. Омывается водами внутриконтинентальных Каспийского и Аральского морей. Казахстан — крупнейшая страна, не имеющая выхода в Мировой океан.
+
+	В административно-территориальном отношении делится на 14 областей и 2 города республиканского значения. Экономико-географически делится на Центральный, Западный, Восточный, Северный и Южный регионы
+</div>
+
+</body>

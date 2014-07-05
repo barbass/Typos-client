@@ -1,0 +1,73 @@
+.e_typos_div {
+	display:none; 
+	z-index:10000; 
+	position:absolute;
+	font-family: Arial, Sans-Serif;
+	font-size: 15px;
+	background-color: white;
+	padding: 1px 3px 3px 3px;
+	width:350px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	border: 1px solid #4169e1;
+}
+
+.e_typos_div .e_typos_title {
+	text-align: left;
+	padding: 0.5em 0.5em 0.5em 1em;
+	background: #4169e1;
+	color: white;
+	margin-top: 2px;
+}
+
+.e_typos_div .e_typos_title .e_typos_close {
+	cursor: pointer;
+	opacity: 0.5;
+	margin-left: 190px;
+}
+
+.e_typos_div .e_typos_title .e_typos_close:hover {
+	opacity: 1;
+}
+
+.e_typos_div .e_typos_desc {
+	font-size: 13px;
+}
+
+.e_typos_div input {
+	font-family: Arial, Sans-Serif;
+	font-size: 13px;
+	margin-bottom: 5px;
+	padding: 3px;
+	}
+
+.e_typos_div .e_typos_message .error {
+	color: red;
+}
+
+.e_typos_div .e_typos_message .success {
+	color: green;
+}
+
+.e_typos_div .e_typos_message .attention {
+	color: blue;
+}
+
+.e_typos_div .e_typos_controll_buttons .e_typos_button {
+	border-radius: 10px;
+	border: 1px solid #d0d0d0;
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
+	background-image: linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
+	background-color:#FFFFFF !important;
+}
+
+.e_typos_div .e_typos_controll_buttons .e_typos_button:hover {
+	border: 1px solid #d0d0d0;
+	background-color:#DDDDDD !important;
+	border-radius: 10px; 
+}
